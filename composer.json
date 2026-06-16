@@ -1,0 +1,46 @@
+{
+    "name": "ahinest/laravel-log-viewer",
+    "description": "Laravel package to browse, filter and manage application log files.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "logs",
+        "log-viewer",
+        "monitoring",
+        "debugging"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edwin J. Villegas M.",
+            "email": "devvillegas@proton.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ahinest\\LogViewer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ahinest\\LogViewer\\LogViewerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
